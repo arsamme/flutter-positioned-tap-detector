@@ -1,0 +1,12 @@
+name: positioned_tap_detector_2
+description: Widget allowing to receive tap callbacks together with their position on the screen.
+version: 1.0.0
+author: Ali Raghebi <aliraghebiii@gmail.com>
+homepage: https://github.com/arsamme/flutter-positioned-tap-detector
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
