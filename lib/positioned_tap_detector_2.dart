@@ -113,11 +113,14 @@ class _TapPositionDetectorState extends State<PositionedTapDetector2> {
   }
 
   void _onLongPressEvent() {
-    if (_firstTap == null) {
-      _postCallback(_pendingTap!, widget.onLongPress);
-    } else {
-      _sink.add(_pendingTap!);
-      _pendingTap = null;
+    final pending = _pendingTap;
+    if (pending != null) {
+      if (_firstTap == null) {
+        _postCallback(pending, widget.onLongPress);
+      } else {
+        _sink.add(pending);
+        _pendingTap = null;
+      }
     }
   }
 
