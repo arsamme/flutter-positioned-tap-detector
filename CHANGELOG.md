@@ -1,3 +1,6 @@
+## [1.0.4] - 09/18/2021
+
+- Fix null check exception on long press
 ## [1.0.3] - 11/07/2019
 
 - Tap controller internal improvements
